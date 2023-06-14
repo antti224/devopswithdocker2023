@@ -1,0 +1,16 @@
+# Start from the ubuntu image
+FROM ubuntu:20.04
+
+# update packages list and install curl
+RUN apt update && apt -y install curl
+
+# Use /usr/src/app as our workdir. The following instructions will be executed in this location.
+WORKDIR /usr/src/app
+
+# Copy script file to workdir/hello.sh.
+COPY looper-script.sh .
+
+RUN chmod +x looper-script.sh
+
+# When running Docker run the command will be ./hello.sh
+CMD ./looper-script.sh
