@@ -1,0 +1,12 @@
+# Starting command
+docker run --rm -it --name ubuntu2004 ubuntu:20.04 sh -c 'while true; do echo "I
+nput website:"; read website; echo "Searching.."; sleep 1; curl http://$website; done'
+
+# other commands
+docker exec -it ubuntu2004 bash
+apt update
+apt -y install curl
+
+
+# final command
+helsinki.fi
