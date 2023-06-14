@@ -1,0 +1,8 @@
+# sizes
+ubuntu 83MB
+alpine 15.7MB
+
+# alpine secret message
+Secret message is: 'You can find the source code here: https://github.com/docker-hy'
+# ubuntu secret message
+Secret message is: 'You can find the source code here: https://github.com/docker-hy'
